@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ePoint.Designer.vb">
+      <DependentUpon>ePoint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ePoint.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -96,14 +102,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Point.Designer.vb">
-      <DependentUpon>Point.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Point.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ePoint.resx">
+      <DependentUpon>ePoint.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -112,9 +115,6 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Point.resx">
-      <DependentUpon>Point.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

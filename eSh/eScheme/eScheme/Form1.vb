@@ -35,6 +35,7 @@
 	End Sub
 
 	Private Sub Form1_MouseClick(sender As Object, e As MouseEventArgs) Handles Me.MouseClick
-		Dim P As New Point
+		Dim p As New ePoint(rx, ry)
+		Me.Controls.Add(p)
 	End Sub
 End Class
