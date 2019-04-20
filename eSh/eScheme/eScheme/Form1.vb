@@ -19,14 +19,12 @@
 	End Sub
 
 	Private Sub Form1_MouseMove(sender As Object, e As MouseEventArgs) Handles Me.MouseMove
-		rx = e.X
-		rx = CInt(Math.Round(rx / 20))
+		rx = CInt(Math.Round(e.X / 20))
 		rx = rx * 20
-		ry = e.Y
-		ry = CInt(Math.Round(ry / 20))
+		ry = CInt(Math.Round(e.Y / 20))
 		ry = ry * 20
 		Dim G As Graphics = Me.CreateGraphics
-		'G.Clear(Me.BackColor)
+		G.Clear(Me.BackColor)
 		G.SmoothingMode = Drawing2D.SmoothingMode.AntiAlias
 		Dim Pn As New Pen(Color.LightGreen, 1)
 		Pn.DashStyle = Drawing2D.DashStyle.Dash
@@ -34,5 +32,9 @@
 		G.DrawLine(Pn, rx, 0, rx, 3000)
 		G.Dispose()
 		ToolTip1.SetToolTip(Me, CStr(rx) + ", " + CStr(ry))
+	End Sub
+
+	Private Sub Form1_MouseClick(sender As Object, e As MouseEventArgs) Handles Me.MouseClick
+		Dim P As New Point
 	End Sub
 End Class
