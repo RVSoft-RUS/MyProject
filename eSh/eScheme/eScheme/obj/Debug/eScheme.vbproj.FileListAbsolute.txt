@@ -11,3 +11,4 @@ E:\Projects\eSh\eScheme\eScheme\obj\Debug\eScheme.exe
 E:\Projects\eSh\eScheme\eScheme\obj\Debug\eScheme.xml
 E:\Projects\eSh\eScheme\eScheme\obj\Debug\eScheme.pdb
 E:\Projects\eSh\eScheme\eScheme\obj\Debug\eScheme.ePoint.resources
+E:\Projects\eSh\eScheme\eScheme\obj\Debug\eScheme.eLine.resources

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class ePoint
+Partial Class eLine
 	Inherits System.Windows.Forms.UserControl
 
 	'Пользовательский элемент управления (UserControl) переопределяет метод Dispose для очистки списка компонентов.
@@ -24,14 +24,13 @@ Partial Class ePoint
 	Private Sub InitializeComponent()
 		Me.SuspendLayout()
 		'
-		'ePoint
+		'eLine
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
 		Me.BackColor = System.Drawing.Color.Red
-		Me.Cursor = System.Windows.Forms.Cursors.Cross
-		Me.Name = "ePoint"
-		Me.Size = New System.Drawing.Size(9, 9)
+		Me.Name = "eLine"
+		Me.Size = New System.Drawing.Size(179, 3)
 		Me.ResumeLayout(False)
 
 	End Sub

@@ -47,7 +47,7 @@ Partial Class Form1
 		Me.PictureBox6 = New System.Windows.Forms.PictureBox()
 		Me.PictureBox5 = New System.Windows.Forms.PictureBox()
 		Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-		Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+		Me.PictureBox_Point = New System.Windows.Forms.PictureBox()
 		Me.PictureBox2 = New System.Windows.Forms.PictureBox()
 		Me.PictureBox1 = New System.Windows.Forms.PictureBox()
 		Me.CheckBox2 = New System.Windows.Forms.CheckBox()
@@ -69,6 +69,8 @@ Partial Class Form1
 		Me.СправкаToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
 		Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
 		Me.ОпрограммеToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
+		Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
 		Me.GroupBox1.SuspendLayout()
 		CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -86,7 +88,7 @@ Partial Class Form1
 		CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-		CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.PictureBox_Point, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
 		CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.MenuStrip1.SuspendLayout()
@@ -117,7 +119,7 @@ Partial Class Form1
 		Me.GroupBox1.Controls.Add(Me.PictureBox6)
 		Me.GroupBox1.Controls.Add(Me.PictureBox5)
 		Me.GroupBox1.Controls.Add(Me.PictureBox4)
-		Me.GroupBox1.Controls.Add(Me.PictureBox3)
+		Me.GroupBox1.Controls.Add(Me.PictureBox_Point)
 		Me.GroupBox1.Controls.Add(Me.PictureBox2)
 		Me.GroupBox1.Controls.Add(Me.PictureBox1)
 		Me.GroupBox1.Location = New System.Drawing.Point(800, 25)
@@ -401,18 +403,18 @@ Partial Class Form1
 		Me.PictureBox4.TabIndex = 9
 		Me.PictureBox4.TabStop = False
 		'
-		'PictureBox3
+		'PictureBox_Point
 		'
-		Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
-		Me.PictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-		Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Hand
-		Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-		Me.PictureBox3.Location = New System.Drawing.Point(6, 103)
-		Me.PictureBox3.Name = "PictureBox3"
-		Me.PictureBox3.Size = New System.Drawing.Size(25, 22)
-		Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-		Me.PictureBox3.TabIndex = 4
-		Me.PictureBox3.TabStop = False
+		Me.PictureBox_Point.BackColor = System.Drawing.Color.Transparent
+		Me.PictureBox_Point.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+		Me.PictureBox_Point.Cursor = System.Windows.Forms.Cursors.Hand
+		Me.PictureBox_Point.Image = CType(resources.GetObject("PictureBox_Point.Image"), System.Drawing.Image)
+		Me.PictureBox_Point.Location = New System.Drawing.Point(6, 103)
+		Me.PictureBox_Point.Name = "PictureBox_Point"
+		Me.PictureBox_Point.Size = New System.Drawing.Size(25, 22)
+		Me.PictureBox_Point.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+		Me.PictureBox_Point.TabIndex = 4
+		Me.PictureBox_Point.TabStop = False
 		'
 		'PictureBox2
 		'
@@ -562,10 +564,20 @@ Partial Class Form1
 		Me.ОпрограммеToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
 		Me.ОпрограммеToolStripMenuItem.Text = "&О программе..."
 		'
+		'SaveFileDialog1
+		'
+		Me.SaveFileDialog1.Filter = """Файлы электросхем""|*.esc"
+		'
+		'OpenFileDialog1
+		'
+		Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+		Me.OpenFileDialog1.Filter = """Файлы электросхем""|*.esc"
+		'
 		'Form1
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+		Me.BackColor = System.Drawing.Color.White
 		Me.ClientSize = New System.Drawing.Size(873, 590)
 		Me.Controls.Add(Me.MenuStrip1)
 		Me.Controls.Add(Me.CheckBox2)
@@ -590,7 +602,7 @@ Partial Class Form1
 		CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
 		CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
 		CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-		CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.PictureBox_Point, System.ComponentModel.ISupportInitialize).EndInit()
 		CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
 		CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
 		Me.MenuStrip1.ResumeLayout(False)
@@ -621,7 +633,7 @@ Partial Class Form1
 	Friend WithEvents PictureBox6 As PictureBox
 	Friend WithEvents PictureBox5 As PictureBox
 	Friend WithEvents PictureBox4 As PictureBox
-	Friend WithEvents PictureBox3 As PictureBox
+	Friend WithEvents PictureBox_Point As PictureBox
 	Friend WithEvents PictureBox2 As PictureBox
 	Friend WithEvents PictureBox1 As PictureBox
 	Friend WithEvents CheckBox2 As CheckBox
@@ -645,4 +657,6 @@ Partial Class Form1
 	Friend WithEvents ОпрограммеToolStripMenuItem As ToolStripMenuItem
 	Friend WithEvents Label_A3 As Label
 	Friend WithEvents Label_A4 As Label
+	Friend WithEvents SaveFileDialog1 As SaveFileDialog
+	Friend WithEvents OpenFileDialog1 As OpenFileDialog
 End Class
