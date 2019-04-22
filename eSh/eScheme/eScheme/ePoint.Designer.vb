@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class ePoint
+Partial Class EPoint
 	Inherits System.Windows.Forms.UserControl
 
 	'Пользовательский элемент управления (UserControl) переопределяет метод Dispose для очистки списка компонентов.

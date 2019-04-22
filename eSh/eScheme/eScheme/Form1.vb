@@ -3,6 +3,7 @@ Imports System.Runtime.Serialization
 
 Public Class Form1
 	Public rx As Integer, ry As Integer 'округленные до 20 координаты точки
+	Dim zx, zy As Integer 'Для предотвращения мерцания линий при MouseMove
 	Public Mode As String = "" 'Текущий режим - показывает состояние, что делаем. Пусто - ничего не делаем
 	Public Elements As New ArrayList
 	Public FileName As String
@@ -26,10 +27,15 @@ Public Class Form1
 	End Sub
 
 	Private Sub Form1_MouseMove(sender As Object, e As MouseEventArgs) Handles Me.MouseMove
+		If Math.Abs(zx - e.X) + Math.Abs(zy - e.Y) < 4 Then
+			Exit Sub 'Если почти не сдвинулось - то выход
+		End If
 		rx = CInt(Math.Round(e.X / 20))
 		rx = rx * 20
 		ry = CInt(Math.Round(e.Y / 20))
 		ry = ry * 20
+		zx = e.X
+		zy = e.Y
 		Dim G As Graphics = Me.CreateGraphics
 		If e.Button = MouseButtons.Left Then
 
@@ -38,8 +44,9 @@ Public Class Form1
 		End If
 
 		G.SmoothingMode = Drawing2D.SmoothingMode.AntiAlias
-		Dim Pn As New Pen(Color.LightGreen, 1)
-		Pn.DashStyle = Drawing2D.DashStyle.Dash
+		Dim Pn As New Pen(Color.LightGreen, 1) With {
+			.DashStyle = Drawing2D.DashStyle.Dash
+		}
 		G.DrawLine(Pn, 0, ry, 3000, ry)
 		G.DrawLine(Pn, rx, 0, rx, 3000)
 		G.Dispose()
@@ -55,15 +62,18 @@ Public Class Form1
 
 	Private Sub Form1_MouseClick(sender As Object, e As MouseEventArgs) Handles Me.MouseClick
 		If Mode = "newPoint" Then
-			Dim eComp As New eComponent
-			eComp.X = rx
-			eComp.Y = ry
-			eComp.aType = "ePoint"
-			eComp.numInArray = Elements.Count
+			Dim eComp As New EComponent With {
+				.X = rx,
+				.Y = ry,
+				.aType = "ePoint",
+				.numInArray = Elements.Count
+			}
 			Elements.Add(eComp)
-			Dim p As New ePoint(rx, ry)
-			p.num = eComp.numInArray
+			Dim p As New EPoint(rx, ry) With {
+				.num = eComp.numInArray
+			}
 			Me.Controls.Add(p)
+			eComp.component = p
 
 			Mode = ""
 			GroupBox1.Visible = True
@@ -92,6 +102,7 @@ Public Class Form1
 			FileName = SaveFileDialog1.FileName
 		End If
 		Try
+			'не сериализуется
 			Dim fStream As New FileStream(FileName, FileMode.Create, FileAccess.Write)
 			Dim myBinaryFormatter As New Formatters.Binary.BinaryFormatter
 			myBinaryFormatter.Serialize(fStream, Elements)
@@ -123,6 +134,13 @@ Public Class Form1
 		FileName = OpenFileDialog1.FileName
 		If FileName = "" Then Exit Sub
 
+		Dim eComp As EComponent
+		For i = 0 To Elements.Count - 1
+			eComp = Elements(i)
+			eComp.component.Dispose()
+		Next
+		Elements.Clear()
+
 		Try
 			Dim fStream As New FileStream(FileName, FileMode.Open, FileAccess.Read)
 			Dim myBinaryFormatter As New Formatters.Binary.BinaryFormatter
@@ -133,14 +151,16 @@ Public Class Form1
 			Exit Sub
 		End Try
 		'Отображение прочитанного массива
-		Dim eComp As New eComponent
+		'Dim eComp As New eComponent
 		For i = 0 To Elements.Count - 1
 			eComp = Elements(i)
 			'ePoint
 			If eComp.aType = "ePoint" Then
-				Dim p As New ePoint(eComp.X, eComp.Y)
-				p.num = i
+				Dim p As New EPoint(eComp.X, eComp.Y) With {
+					.num = i
+				}
 				Me.Controls.Add(p)
+				eComp.component = p
 			End If
 
 		Next

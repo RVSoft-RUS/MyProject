@@ -1,8 +1,8 @@
 ﻿Imports System.Drawing.Drawing2D
 Imports eScheme
 
-Public Class ePoint
-	Implements Connectable
+<Serializable> Public Class EPoint
+	Implements IConnectable
 	Dim X As Integer
 	Dim Y As Integer
 	Public num As Integer
@@ -32,13 +32,17 @@ Public Class ePoint
 		Me.Region = New Region(gpath)
 	End Sub
 
-	Public Sub Change(from As Integer) Implements Connectable.Change
+	Public Sub Change(from As Integer) Implements IConnectable.Change
 		Throw New NotImplementedException()
 	End Sub
 
-	Private Sub ePoint_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Me.KeyPress
-		If e.KeyChar = "n" Then
+	Private Sub EPoint_KeyPress(sender As Object, e As KeyPressEventArgs) Handles Me.KeyPress
+		If e.KeyChar = "n" Or e.KeyChar = "т" Then
 			MsgBox("Номер узла: " + CStr(num))
 		End If
+	End Sub
+
+	Private Sub Connectable_Dispose() Implements IConnectable.Dispose
+		Me.Dispose()
 	End Sub
 End Class
