@@ -1,19 +1,19 @@
 ﻿Public Class eFormat
-    Dim format As String 'A41, A42, A31, A32
-    Dim name As String
-    Dim number As String
-    Dim type As String
-    Dim lit As String
-    Dim mashtab As String
-    Dim list As Integer
-    Dim listov As Integer
-    Dim massa As Double
-    Dim org1 As String
-    Dim org2 As String
-    Dim razrab As String
-    Dim prov As String
-    Dim sogl As String
-    Dim tkontr As String
-    Dim nkontr As String
-    Dim utv As String
+    Public format As String 'A41, A42, A31, A32
+    Public name As String
+    Public number As String
+    Public type As String
+    Public lit As String
+    Public mashtab As String
+    Public list As Integer
+    Public listov As Integer
+    Public massa As Double
+    Public org1 As String
+    Public org2 As String
+    Public razrab As String
+    Public prov As String
+    Public sogl As String
+    Public tkontr As String
+    Public nkontr As String
+    Public utv As String
 End Class

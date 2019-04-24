@@ -1,4 +1,5 @@
 ﻿Public Class vLine
+    Implements Removable
     Sub New(x As Integer, y1 As Integer, y2 As Integer, w As Integer)
         InitializeComponent()
         Me.Width = w
@@ -9,4 +10,7 @@
         Me.Height = (y2 - y1) * 3
     End Sub
 
+    Private Sub Removable_Dispose() Implements Removable.Dispose
+        Me.Dispose()
+    End Sub
 End Class

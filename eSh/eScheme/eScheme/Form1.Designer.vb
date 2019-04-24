@@ -25,7 +25,6 @@ Partial Class Form1
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label_A3 = New System.Windows.Forms.Label()
         Me.Label_A4 = New System.Windows.Forms.Label()
         Me.PictureBox19 = New System.Windows.Forms.PictureBox()
         Me.PictureBox18 = New System.Windows.Forms.PictureBox()
@@ -72,39 +71,39 @@ Partial Class Form1
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.txtNumber = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.lblLit = New System.Windows.Forms.Label()
+        Me.lblMassa = New System.Windows.Forms.Label()
+        Me.lblMashtab = New System.Windows.Forms.Label()
+        Me.lblListov = New System.Windows.Forms.Label()
+        Me.lblList = New System.Windows.Forms.Label()
+        Me.txtOrg1 = New System.Windows.Forms.TextBox()
+        Me.txtOrg2 = New System.Windows.Forms.TextBox()
         Me.txtName = New System.Windows.Forms.TextBox()
         Me.txtType = New System.Windows.Forms.TextBox()
         Me.txtMassa = New System.Windows.Forms.TextBox()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox20 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox21 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox22 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox23 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox24 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox25 = New System.Windows.Forms.PictureBox()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
+        Me.lblKF_A4 = New System.Windows.Forms.Label()
+        Me.pb1 = New System.Windows.Forms.PictureBox()
+        Me.pb2 = New System.Windows.Forms.PictureBox()
+        Me.pb3 = New System.Windows.Forms.PictureBox()
+        Me.pb4 = New System.Windows.Forms.PictureBox()
+        Me.pb5 = New System.Windows.Forms.PictureBox()
+        Me.pb6 = New System.Windows.Forms.PictureBox()
+        Me.pb7 = New System.Windows.Forms.PictureBox()
+        Me.lblRazrab = New System.Windows.Forms.Label()
+        Me.lblProv = New System.Windows.Forms.Label()
+        Me.lblSogl = New System.Windows.Forms.Label()
+        Me.lblUtv = New System.Windows.Forms.Label()
+        Me.lblNcontr = New System.Windows.Forms.Label()
+        Me.lblTcontr = New System.Windows.Forms.Label()
         Me.txtMashtab = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txtRazrab = New System.Windows.Forms.TextBox()
+        Me.txtProv = New System.Windows.Forms.TextBox()
+        Me.txtSogl = New System.Windows.Forms.TextBox()
+        Me.txtUtv = New System.Windows.Forms.TextBox()
+        Me.txtNcontr = New System.Windows.Forms.TextBox()
+        Me.txtTcontr = New System.Windows.Forms.TextBox()
+        Me.txtList = New System.Windows.Forms.TextBox()
+        Me.txtListov = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -126,19 +125,18 @@ Partial Class Form1
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
         Me.GroupBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox1.Controls.Add(Me.Label_A3)
         Me.GroupBox1.Controls.Add(Me.Label_A4)
         Me.GroupBox1.Controls.Add(Me.PictureBox19)
         Me.GroupBox1.Controls.Add(Me.PictureBox18)
@@ -170,18 +168,6 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Элемент"
         '
-        'Label_A3
-        '
-        Me.Label_A3.AutoSize = True
-        Me.Label_A3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label_A3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label_A3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label_A3.Location = New System.Drawing.Point(35, 370)
-        Me.Label_A3.Name = "Label_A3"
-        Me.Label_A3.Size = New System.Drawing.Size(27, 20)
-        Me.Label_A3.TabIndex = 34
-        Me.Label_A3.Text = "A3"
-        '
         'Label_A4
         '
         Me.Label_A4.AutoSize = True
@@ -190,9 +176,10 @@ Partial Class Form1
         Me.Label_A4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
         Me.Label_A4.Location = New System.Drawing.Point(5, 370)
         Me.Label_A4.Name = "Label_A4"
-        Me.Label_A4.Size = New System.Drawing.Size(27, 20)
+        Me.Label_A4.Size = New System.Drawing.Size(48, 20)
         Me.Label_A4.TabIndex = 33
-        Me.Label_A4.Text = "A4"
+        Me.Label_A4.Text = "A4/А3"
+        Me.ToolTip1.SetToolTip(Me.Label_A4, "Выбрать формат для листа")
         '
         'PictureBox19
         '
@@ -625,77 +612,77 @@ Partial Class Form1
         Me.txtNumber.Text = "320405-14-3836008Э3 "
         Me.txtNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
-        'Label5
+        'lblLit
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label5.Location = New System.Drawing.Point(456, 779)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(24, 13)
-        Me.Label5.TabIndex = 19
-        Me.Label5.Text = "Лит"
+        Me.lblLit.AutoSize = True
+        Me.lblLit.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.lblLit.Location = New System.Drawing.Point(456, 779)
+        Me.lblLit.Name = "lblLit"
+        Me.lblLit.Size = New System.Drawing.Size(24, 13)
+        Me.lblLit.TabIndex = 19
+        Me.lblLit.Text = "Лит"
         '
-        'Label6
+        'lblMassa
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label6.Location = New System.Drawing.Point(502, 779)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(33, 13)
-        Me.Label6.TabIndex = 20
-        Me.Label6.Text = "Масса"
+        Me.lblMassa.AutoSize = True
+        Me.lblMassa.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.lblMassa.Location = New System.Drawing.Point(502, 779)
+        Me.lblMassa.Name = "lblMassa"
+        Me.lblMassa.Size = New System.Drawing.Size(33, 13)
+        Me.lblMassa.TabIndex = 20
+        Me.lblMassa.Text = "Масса"
         '
-        'Label7
+        'lblMashtab
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label7.Location = New System.Drawing.Point(558, 779)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(45, 13)
-        Me.Label7.TabIndex = 21
-        Me.Label7.Text = "Масштаб"
+        Me.lblMashtab.AutoSize = True
+        Me.lblMashtab.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.lblMashtab.Location = New System.Drawing.Point(558, 779)
+        Me.lblMashtab.Name = "lblMashtab"
+        Me.lblMashtab.Size = New System.Drawing.Size(45, 13)
+        Me.lblMashtab.TabIndex = 21
+        Me.lblMashtab.Text = "Масштаб"
         '
-        'Label8
+        'lblListov
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label8.Location = New System.Drawing.Point(520, 839)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(39, 13)
-        Me.Label8.TabIndex = 23
-        Me.Label8.Text = "Листов"
+        Me.lblListov.AutoSize = True
+        Me.lblListov.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.lblListov.Location = New System.Drawing.Point(520, 839)
+        Me.lblListov.Name = "lblListov"
+        Me.lblListov.Size = New System.Drawing.Size(39, 13)
+        Me.lblListov.TabIndex = 23
+        Me.lblListov.Text = "Листов"
         '
-        'Label9
+        'lblList
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label9.Location = New System.Drawing.Point(450, 839)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(29, 13)
-        Me.Label9.TabIndex = 22
-        Me.Label9.Text = "Лист"
+        Me.lblList.AutoSize = True
+        Me.lblList.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.lblList.Location = New System.Drawing.Point(450, 839)
+        Me.lblList.Name = "lblList"
+        Me.lblList.Size = New System.Drawing.Size(29, 13)
+        Me.lblList.TabIndex = 22
+        Me.lblList.Text = "Лист"
         '
-        'TextBox2
+        'txtOrg1
         '
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox2.Font = New System.Drawing.Font("GOST type A", 14.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(453, 855)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(171, 20)
-        Me.TextBox2.TabIndex = 24
-        Me.TextBox2.Text = "ГАЗ"
-        Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.txtOrg1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtOrg1.Font = New System.Drawing.Font("GOST type A", 14.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.txtOrg1.Location = New System.Drawing.Point(453, 855)
+        Me.txtOrg1.Name = "txtOrg1"
+        Me.txtOrg1.Size = New System.Drawing.Size(171, 20)
+        Me.txtOrg1.TabIndex = 24
+        Me.txtOrg1.Text = "ГАЗ"
+        Me.txtOrg1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'TextBox3
+        'txtOrg2
         '
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox3.Font = New System.Drawing.Font("GOST type A", 14.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(453, 874)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(171, 20)
-        Me.TextBox3.TabIndex = 25
-        Me.TextBox3.Text = "ОИЦ"
-        Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.txtOrg2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtOrg2.Font = New System.Drawing.Font("GOST type A", 14.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.txtOrg2.Location = New System.Drawing.Point(453, 874)
+        Me.txtOrg2.Name = "txtOrg2"
+        Me.txtOrg2.Size = New System.Drawing.Size(171, 20)
+        Me.txtOrg2.TabIndex = 25
+        Me.txtOrg2.Text = "ОИЦ"
+        Me.txtOrg2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'txtName
         '
@@ -730,145 +717,145 @@ Partial Class Form1
         Me.txtMassa.TabIndex = 28
         Me.txtMassa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Label10
+        'lblKF_A4
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label10.Location = New System.Drawing.Point(331, 900)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(233, 13)
-        Me.Label10.TabIndex = 29
-        Me.Label10.Text = "Копировал                               Формат   А4"
+        Me.lblKF_A4.AutoSize = True
+        Me.lblKF_A4.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.lblKF_A4.Location = New System.Drawing.Point(331, 900)
+        Me.lblKF_A4.Name = "lblKF_A4"
+        Me.lblKF_A4.Size = New System.Drawing.Size(233, 13)
+        Me.lblKF_A4.TabIndex = 29
+        Me.lblKF_A4.Text = "Копировал                               Формат   А4"
         '
-        'PictureBox3
+        'pb1
         '
-        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(8, 95)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(12, 77)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox3.TabIndex = 30
-        Me.PictureBox3.TabStop = False
+        Me.pb1.Image = CType(resources.GetObject("pb1.Image"), System.Drawing.Image)
+        Me.pb1.Location = New System.Drawing.Point(8, 95)
+        Me.pb1.Name = "pb1"
+        Me.pb1.Size = New System.Drawing.Size(12, 77)
+        Me.pb1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pb1.TabIndex = 30
+        Me.pb1.TabStop = False
         '
-        'PictureBox20
+        'pb2
         '
-        Me.PictureBox20.Image = CType(resources.GetObject("PictureBox20.Image"), System.Drawing.Image)
-        Me.PictureBox20.Location = New System.Drawing.Point(8, 248)
-        Me.PictureBox20.Name = "PictureBox20"
-        Me.PictureBox20.Size = New System.Drawing.Size(12, 52)
-        Me.PictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox20.TabIndex = 31
-        Me.PictureBox20.TabStop = False
+        Me.pb2.Image = CType(resources.GetObject("pb2.Image"), System.Drawing.Image)
+        Me.pb2.Location = New System.Drawing.Point(8, 248)
+        Me.pb2.Name = "pb2"
+        Me.pb2.Size = New System.Drawing.Size(12, 52)
+        Me.pb2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pb2.TabIndex = 31
+        Me.pb2.TabStop = False
         '
-        'PictureBox21
+        'pb3
         '
-        Me.PictureBox21.Image = CType(resources.GetObject("PictureBox21.Image"), System.Drawing.Image)
-        Me.PictureBox21.Location = New System.Drawing.Point(8, 480)
-        Me.PictureBox21.Name = "PictureBox21"
-        Me.PictureBox21.Size = New System.Drawing.Size(12, 69)
-        Me.PictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox21.TabIndex = 32
-        Me.PictureBox21.TabStop = False
+        Me.pb3.Image = CType(resources.GetObject("pb3.Image"), System.Drawing.Image)
+        Me.pb3.Location = New System.Drawing.Point(8, 480)
+        Me.pb3.Name = "pb3"
+        Me.pb3.Size = New System.Drawing.Size(12, 69)
+        Me.pb3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pb3.TabIndex = 32
+        Me.pb3.TabStop = False
         '
-        'PictureBox22
+        'pb4
         '
-        Me.PictureBox22.Image = CType(resources.GetObject("PictureBox22.Image"), System.Drawing.Image)
-        Me.PictureBox22.Location = New System.Drawing.Point(8, 568)
-        Me.PictureBox22.Name = "PictureBox22"
-        Me.PictureBox22.Size = New System.Drawing.Size(12, 71)
-        Me.PictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox22.TabIndex = 33
-        Me.PictureBox22.TabStop = False
+        Me.pb4.Image = CType(resources.GetObject("pb4.Image"), System.Drawing.Image)
+        Me.pb4.Location = New System.Drawing.Point(8, 568)
+        Me.pb4.Name = "pb4"
+        Me.pb4.Size = New System.Drawing.Size(12, 71)
+        Me.pb4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pb4.TabIndex = 33
+        Me.pb4.TabStop = False
         '
-        'PictureBox23
+        'pb5
         '
-        Me.PictureBox23.Image = CType(resources.GetObject("PictureBox23.Image"), System.Drawing.Image)
-        Me.PictureBox23.Location = New System.Drawing.Point(8, 645)
-        Me.PictureBox23.Name = "PictureBox23"
-        Me.PictureBox23.Size = New System.Drawing.Size(12, 71)
-        Me.PictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox23.TabIndex = 34
-        Me.PictureBox23.TabStop = False
+        Me.pb5.Image = CType(resources.GetObject("pb5.Image"), System.Drawing.Image)
+        Me.pb5.Location = New System.Drawing.Point(8, 645)
+        Me.pb5.Name = "pb5"
+        Me.pb5.Size = New System.Drawing.Size(12, 71)
+        Me.pb5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pb5.TabIndex = 34
+        Me.pb5.TabStop = False
         '
-        'PictureBox24
+        'pb6
         '
-        Me.PictureBox24.Image = CType(resources.GetObject("PictureBox24.Image"), System.Drawing.Image)
-        Me.PictureBox24.Location = New System.Drawing.Point(8, 733)
-        Me.PictureBox24.Name = "PictureBox24"
-        Me.PictureBox24.Size = New System.Drawing.Size(12, 69)
-        Me.PictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox24.TabIndex = 35
-        Me.PictureBox24.TabStop = False
+        Me.pb6.Image = CType(resources.GetObject("pb6.Image"), System.Drawing.Image)
+        Me.pb6.Location = New System.Drawing.Point(8, 733)
+        Me.pb6.Name = "pb6"
+        Me.pb6.Size = New System.Drawing.Size(12, 69)
+        Me.pb6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pb6.TabIndex = 35
+        Me.pb6.TabStop = False
         '
-        'PictureBox25
+        'pb7
         '
-        Me.PictureBox25.Image = CType(resources.GetObject("PictureBox25.Image"), System.Drawing.Image)
-        Me.PictureBox25.Location = New System.Drawing.Point(8, 824)
-        Me.PictureBox25.Name = "PictureBox25"
-        Me.PictureBox25.Size = New System.Drawing.Size(12, 71)
-        Me.PictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox25.TabIndex = 36
-        Me.PictureBox25.TabStop = False
+        Me.pb7.Image = CType(resources.GetObject("pb7.Image"), System.Drawing.Image)
+        Me.pb7.Location = New System.Drawing.Point(8, 824)
+        Me.pb7.Name = "pb7"
+        Me.pb7.Size = New System.Drawing.Size(12, 71)
+        Me.pb7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pb7.TabIndex = 36
+        Me.pb7.TabStop = False
         '
-        'Label11
+        'lblRazrab
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label11.Location = New System.Drawing.Point(45, 809)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(38, 13)
-        Me.Label11.TabIndex = 37
-        Me.Label11.Text = "Разраб."
+        Me.lblRazrab.AutoSize = True
+        Me.lblRazrab.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.lblRazrab.Location = New System.Drawing.Point(45, 809)
+        Me.lblRazrab.Name = "lblRazrab"
+        Me.lblRazrab.Size = New System.Drawing.Size(38, 13)
+        Me.lblRazrab.TabIndex = 37
+        Me.lblRazrab.Text = "Разраб."
         '
-        'Label12
+        'lblProv
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label12.Location = New System.Drawing.Point(45, 824)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(29, 13)
-        Me.Label12.TabIndex = 38
-        Me.Label12.Text = "Пров."
+        Me.lblProv.AutoSize = True
+        Me.lblProv.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.lblProv.Location = New System.Drawing.Point(45, 824)
+        Me.lblProv.Name = "lblProv"
+        Me.lblProv.Size = New System.Drawing.Size(29, 13)
+        Me.lblProv.TabIndex = 38
+        Me.lblProv.Text = "Пров."
         '
-        'Label13
+        'lblSogl
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label13.Location = New System.Drawing.Point(45, 839)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(29, 13)
-        Me.Label13.TabIndex = 39
-        Me.Label13.Text = "Согл."
+        Me.lblSogl.AutoSize = True
+        Me.lblSogl.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.lblSogl.Location = New System.Drawing.Point(45, 839)
+        Me.lblSogl.Name = "lblSogl"
+        Me.lblSogl.Size = New System.Drawing.Size(29, 13)
+        Me.lblSogl.TabIndex = 39
+        Me.lblSogl.Text = "Согл."
         '
-        'Label14
+        'lblUtv
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label14.Location = New System.Drawing.Point(45, 884)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(25, 13)
-        Me.Label14.TabIndex = 42
-        Me.Label14.Text = "Утв."
+        Me.lblUtv.AutoSize = True
+        Me.lblUtv.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.lblUtv.Location = New System.Drawing.Point(45, 884)
+        Me.lblUtv.Name = "lblUtv"
+        Me.lblUtv.Size = New System.Drawing.Size(25, 13)
+        Me.lblUtv.TabIndex = 42
+        Me.lblUtv.Text = "Утв."
         '
-        'Label15
+        'lblNcontr
         '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label15.Location = New System.Drawing.Point(45, 869)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(42, 13)
-        Me.Label15.TabIndex = 41
-        Me.Label15.Text = "Н.контр."
+        Me.lblNcontr.AutoSize = True
+        Me.lblNcontr.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.lblNcontr.Location = New System.Drawing.Point(45, 869)
+        Me.lblNcontr.Name = "lblNcontr"
+        Me.lblNcontr.Size = New System.Drawing.Size(42, 13)
+        Me.lblNcontr.TabIndex = 41
+        Me.lblNcontr.Text = "Н.контр."
         '
-        'Label16
+        'lblTcontr
         '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label16.Location = New System.Drawing.Point(45, 854)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(42, 13)
-        Me.Label16.TabIndex = 40
-        Me.Label16.Text = "Т.контр."
+        Me.lblTcontr.AutoSize = True
+        Me.lblTcontr.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.lblTcontr.Location = New System.Drawing.Point(45, 854)
+        Me.lblTcontr.Name = "lblTcontr"
+        Me.lblTcontr.Size = New System.Drawing.Size(42, 13)
+        Me.lblTcontr.TabIndex = 40
+        Me.lblTcontr.Text = "Т.контр."
         '
         'txtMashtab
         '
@@ -880,86 +867,86 @@ Partial Class Form1
         Me.txtMashtab.TabIndex = 43
         Me.txtMashtab.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'TextBox8
+        'txtRazrab
         '
-        Me.TextBox8.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox8.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.TextBox8.Location = New System.Drawing.Point(95, 809)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(65, 13)
-        Me.TextBox8.TabIndex = 44
-        Me.TextBox8.Text = "Смирнов"
+        Me.txtRazrab.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtRazrab.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.txtRazrab.Location = New System.Drawing.Point(95, 809)
+        Me.txtRazrab.Name = "txtRazrab"
+        Me.txtRazrab.Size = New System.Drawing.Size(65, 13)
+        Me.txtRazrab.TabIndex = 44
+        Me.txtRazrab.Text = "Смирнов"
         '
-        'TextBox9
+        'txtProv
         '
-        Me.TextBox9.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox9.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.TextBox9.Location = New System.Drawing.Point(95, 824)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(65, 13)
-        Me.TextBox9.TabIndex = 45
-        Me.TextBox9.Text = "Смирнов"
+        Me.txtProv.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtProv.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.txtProv.Location = New System.Drawing.Point(95, 824)
+        Me.txtProv.Name = "txtProv"
+        Me.txtProv.Size = New System.Drawing.Size(65, 13)
+        Me.txtProv.TabIndex = 45
+        Me.txtProv.Text = "Смирнов"
         '
-        'TextBox10
+        'txtSogl
         '
-        Me.TextBox10.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox10.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.TextBox10.Location = New System.Drawing.Point(95, 839)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(65, 13)
-        Me.TextBox10.TabIndex = 46
-        Me.TextBox10.Text = "Смирнов"
+        Me.txtSogl.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtSogl.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.txtSogl.Location = New System.Drawing.Point(95, 839)
+        Me.txtSogl.Name = "txtSogl"
+        Me.txtSogl.Size = New System.Drawing.Size(65, 13)
+        Me.txtSogl.TabIndex = 46
+        Me.txtSogl.Text = "Смирнов"
         '
-        'TextBox11
+        'txtUtv
         '
-        Me.TextBox11.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox11.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.TextBox11.Location = New System.Drawing.Point(95, 884)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(65, 13)
-        Me.TextBox11.TabIndex = 49
-        Me.TextBox11.Text = "Смирнов"
+        Me.txtUtv.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtUtv.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.txtUtv.Location = New System.Drawing.Point(95, 884)
+        Me.txtUtv.Name = "txtUtv"
+        Me.txtUtv.Size = New System.Drawing.Size(65, 13)
+        Me.txtUtv.TabIndex = 49
+        Me.txtUtv.Text = "Смирнов"
         '
-        'TextBox12
+        'txtNcontr
         '
-        Me.TextBox12.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox12.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.TextBox12.Location = New System.Drawing.Point(95, 869)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(65, 13)
-        Me.TextBox12.TabIndex = 48
-        Me.TextBox12.Text = "Смирнов"
+        Me.txtNcontr.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtNcontr.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.txtNcontr.Location = New System.Drawing.Point(95, 869)
+        Me.txtNcontr.Name = "txtNcontr"
+        Me.txtNcontr.Size = New System.Drawing.Size(65, 13)
+        Me.txtNcontr.TabIndex = 48
+        Me.txtNcontr.Text = "Смирнов"
         '
-        'TextBox13
+        'txtTcontr
         '
-        Me.TextBox13.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox13.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.TextBox13.Location = New System.Drawing.Point(95, 854)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(65, 13)
-        Me.TextBox13.TabIndex = 47
-        Me.TextBox13.Text = "Смирнов"
+        Me.txtTcontr.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtTcontr.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.txtTcontr.Location = New System.Drawing.Point(95, 854)
+        Me.txtTcontr.Name = "txtTcontr"
+        Me.txtTcontr.Size = New System.Drawing.Size(65, 13)
+        Me.txtTcontr.TabIndex = 47
+        Me.txtTcontr.Text = "Смирнов"
         '
-        'TextBox1
+        'txtList
         '
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(485, 839)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(20, 13)
-        Me.TextBox1.TabIndex = 50
-        Me.TextBox1.Text = "1"
+        Me.txtList.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtList.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.txtList.Location = New System.Drawing.Point(485, 839)
+        Me.txtList.Name = "txtList"
+        Me.txtList.Size = New System.Drawing.Size(20, 13)
+        Me.txtList.TabIndex = 50
+        Me.txtList.Text = "1"
         '
-        'TextBox4
+        'txtListov
         '
-        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox4.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(565, 839)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(36, 13)
-        Me.TextBox4.TabIndex = 51
-        Me.TextBox4.Text = "1"
-        Me.TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.txtListov.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtListov.Font = New System.Drawing.Font("GOST type A", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.txtListov.Location = New System.Drawing.Point(565, 839)
+        Me.txtListov.Name = "txtListov"
+        Me.txtListov.Size = New System.Drawing.Size(36, 13)
+        Me.txtListov.TabIndex = 51
+        Me.txtListov.Text = "1"
+        Me.txtListov.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Form1
         '
@@ -967,43 +954,44 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(873, 917)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.TextBox11)
-        Me.Controls.Add(Me.TextBox12)
-        Me.Controls.Add(Me.TextBox13)
-        Me.Controls.Add(Me.TextBox10)
-        Me.Controls.Add(Me.TextBox9)
-        Me.Controls.Add(Me.TextBox8)
+        Me.Controls.Add(Me.txtListov)
+        Me.Controls.Add(Me.txtList)
+        Me.Controls.Add(Me.txtUtv)
+        Me.Controls.Add(Me.txtNcontr)
+        Me.Controls.Add(Me.txtTcontr)
+        Me.Controls.Add(Me.txtSogl)
+        Me.Controls.Add(Me.txtProv)
+        Me.Controls.Add(Me.txtRazrab)
         Me.Controls.Add(Me.txtMashtab)
-        Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.Label15)
-        Me.Controls.Add(Me.Label16)
-        Me.Controls.Add(Me.Label13)
-        Me.Controls.Add(Me.Label12)
-        Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.PictureBox25)
-        Me.Controls.Add(Me.PictureBox24)
-        Me.Controls.Add(Me.PictureBox23)
-        Me.Controls.Add(Me.PictureBox22)
-        Me.Controls.Add(Me.PictureBox21)
-        Me.Controls.Add(Me.PictureBox20)
-        Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.lblUtv)
+        Me.Controls.Add(Me.lblNcontr)
+        Me.Controls.Add(Me.lblTcontr)
+        Me.Controls.Add(Me.lblSogl)
+        Me.Controls.Add(Me.lblProv)
+        Me.Controls.Add(Me.lblRazrab)
+        Me.Controls.Add(Me.pb7)
+        Me.Controls.Add(Me.pb6)
+        Me.Controls.Add(Me.pb5)
+        Me.Controls.Add(Me.pb4)
+        Me.Controls.Add(Me.pb3)
+        Me.Controls.Add(Me.pb2)
+        Me.Controls.Add(Me.pb1)
+        Me.Controls.Add(Me.lblKF_A4)
         Me.Controls.Add(Me.txtMassa)
         Me.Controls.Add(Me.txtType)
         Me.Controls.Add(Me.txtName)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.txtOrg2)
+        Me.Controls.Add(Me.txtOrg1)
+        Me.Controls.Add(Me.lblListov)
+        Me.Controls.Add(Me.lblList)
+        Me.Controls.Add(Me.lblMashtab)
+        Me.Controls.Add(Me.lblMassa)
+        Me.Controls.Add(Me.lblLit)
         Me.Controls.Add(Me.txtNumber)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.CheckBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.KeyPreview = True
         Me.Name = "Form1"
         Me.Text = "eScheme"
         Me.GroupBox1.ResumeLayout(False)
@@ -1029,13 +1017,13 @@ Partial Class Form1
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1084,42 +1072,41 @@ Partial Class Form1
     Friend WithEvents СправкаToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
     Friend WithEvents ОпрограммеToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents Label_A3 As Label
     Friend WithEvents Label_A4 As Label
     Friend WithEvents SaveFileDialog1 As SaveFileDialog
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents txtNumber As TextBox
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents lblLit As Label
+    Friend WithEvents lblMassa As Label
+    Friend WithEvents lblMashtab As Label
+    Friend WithEvents lblListov As Label
+    Friend WithEvents lblList As Label
+    Friend WithEvents txtOrg1 As TextBox
+    Friend WithEvents txtOrg2 As TextBox
     Friend WithEvents txtName As TextBox
     Friend WithEvents txtType As TextBox
     Friend WithEvents txtMassa As TextBox
-    Friend WithEvents Label10 As Label
-    Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents PictureBox20 As PictureBox
-    Friend WithEvents PictureBox21 As PictureBox
-    Friend WithEvents PictureBox22 As PictureBox
-    Friend WithEvents PictureBox23 As PictureBox
-    Friend WithEvents PictureBox24 As PictureBox
-    Friend WithEvents PictureBox25 As PictureBox
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Label13 As Label
-    Friend WithEvents Label14 As Label
-    Friend WithEvents Label15 As Label
-    Friend WithEvents Label16 As Label
+    Friend WithEvents lblKF_A4 As Label
+    Friend WithEvents pb1 As PictureBox
+    Friend WithEvents pb2 As PictureBox
+    Friend WithEvents pb3 As PictureBox
+    Friend WithEvents pb4 As PictureBox
+    Friend WithEvents pb5 As PictureBox
+    Friend WithEvents pb6 As PictureBox
+    Friend WithEvents pb7 As PictureBox
+    Friend WithEvents lblRazrab As Label
+    Friend WithEvents lblProv As Label
+    Friend WithEvents lblSogl As Label
+    Friend WithEvents lblUtv As Label
+    Friend WithEvents lblNcontr As Label
+    Friend WithEvents lblTcontr As Label
     Friend WithEvents txtMashtab As TextBox
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents TextBox11 As TextBox
-    Friend WithEvents TextBox12 As TextBox
-    Friend WithEvents TextBox13 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents txtRazrab As TextBox
+    Friend WithEvents txtProv As TextBox
+    Friend WithEvents txtSogl As TextBox
+    Friend WithEvents txtUtv As TextBox
+    Friend WithEvents txtNcontr As TextBox
+    Friend WithEvents txtTcontr As TextBox
+    Friend WithEvents txtList As TextBox
+    Friend WithEvents txtListov As TextBox
 End Class

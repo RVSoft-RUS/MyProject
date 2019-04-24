@@ -1,4 +1,7 @@
-﻿Public Class hLine
+﻿Imports eScheme
+
+Public Class hLine
+    Implements Removable
     'Public x1 As Integer
     'Public x2 As Integer
     'Public y As Integer
@@ -14,4 +17,7 @@
         Me.Width = (x2 - x1) * 3
     End Sub
 
+    Private Sub Removable_Dispose() Implements Removable.Dispose
+        Me.Dispose()
+    End Sub
 End Class
