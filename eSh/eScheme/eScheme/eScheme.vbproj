@@ -74,6 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="eComponent.vb" />
+    <Compile Include="eFormat.vb" />
     <Compile Include="eLine.Designer.vb">
       <DependentUpon>eLine.vb</DependentUpon>
     </Compile>
@@ -94,6 +95,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Connectable.vb" />
+    <Compile Include="hLine.Designer.vb">
+      <DependentUpon>hLine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hLine.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -109,6 +116,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="vLine.Designer.vb">
+      <DependentUpon>vLine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vLine.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="eLine.resx">
@@ -120,11 +133,17 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="hLine.resx">
+      <DependentUpon>hLine.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vLine.resx">
+      <DependentUpon>vLine.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
